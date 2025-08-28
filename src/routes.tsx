@@ -5,6 +5,7 @@ import Books from "./pages/Books/Books";
 import Characters from "./pages/Characters/Character";
 import About from "./pages/Abouts/Abouts";
 import NotFound from "./pages/NotFound/NotFound";
+import Movies from "./pages/Movies";
 
 export const router = createBrowserRouter([
 	{
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
 			{
 				path: "characters",
 				element: <Characters />,
+			},
+			{
+				path: "movies",
+				element: <Movies />,
 			},
 			{
 				path: "about",

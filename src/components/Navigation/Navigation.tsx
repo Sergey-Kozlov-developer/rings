@@ -39,6 +39,16 @@ function Navigation() {
 						Персонажи
 					</Link>
 					<Link
+						to="/movies"
+						className={`py-4 px-2 border-b-2 transition-colors ${
+							isActive("/movies")
+								? "border-blue-500 text-blue-600"
+								: "border-transparent text-gray-600 hover:text-gray-900"
+						}`}
+					>
+						Фильмы
+					</Link>
+					<Link
 						to="/about"
 						className={`py-4 px-2 border-b-2 transition-colors ${
 							isActive("/about")
