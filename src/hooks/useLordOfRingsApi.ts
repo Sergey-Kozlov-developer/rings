@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import type { Book } from "../types";
+import type { Character } from "../types/character";
 
 // Ваш API-ключ из переменной окружения
-const API_KEY = import.meta.env.REACT_APP_LOTR_API_KEY;
+const API_KEY = import.meta.env.VITE_REACT_APP_LOTR_API_KEY;
 const BASE_URL = "https://the-one-api.dev/v2";
 
 export function useLordOfRingsApi<T>(endpoint: string) {
@@ -45,4 +46,8 @@ export function useLordOfRingsApi<T>(endpoint: string) {
 // Специализированный хук для книг
 export function useBooks() {
 	return useLordOfRingsApi<Book>("/book");
+}
+// Специализированный хук для персонажей
+export function useCharacters() {
+	return useLordOfRingsApi<Character>("/character");
 }
