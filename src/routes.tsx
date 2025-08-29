@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./pages/Home/Home";
-import Books from "./pages/Books/Books";
-import Characters from "./pages/Characters/Character";
-import About from "./pages/Abouts/Abouts";
-import NotFound from "./pages/NotFound/NotFound";
+import Home from "./pages/Home";
+import Books from "./pages/Books";
+import Characters from "./pages/Characters";
 import Movies from "./pages/Movies";
+import About from "./pages/Abouts";
+import NotFound from "./pages/NotFound";
 
-export const router = createBrowserRouter([
+export const routers = createBrowserRouter([
 	{
 		path: "/",
 		element: <Layout />,

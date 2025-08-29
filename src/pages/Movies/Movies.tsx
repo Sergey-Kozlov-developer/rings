@@ -3,10 +3,11 @@ import { useLordOfRingsApi } from "../../hooks";
 interface Movies {
 	_id: string;
 	name: string;
+	quote: string;
 }
 
 function Movies() {
-	const { data: movies } = useLordOfRingsApi<Movies>("/movies");
+	const { data: movies } = useLordOfRingsApi<Movies>("/movie");
 	return (
 		<div>
 			<h1>Movies</h1>

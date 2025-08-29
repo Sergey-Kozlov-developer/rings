@@ -1,5 +1,5 @@
 import Header from "../Header";
-import Navigation from "../Navigation/Navigation";
+import Navigation from "../Navigation";
 import { Outlet } from "react-router-dom";
 
 function Layout() {
