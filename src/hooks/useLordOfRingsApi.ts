@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Book } from "../types";
 import type { Character } from "../types/character";
+import type { Movie } from "../types/movie";
 
 // Ваш API-ключ из переменной окружения
 const API_KEY = import.meta.env.VITE_REACT_APP_LOTR_API_KEY;
@@ -51,3 +52,11 @@ export function useBooks() {
 export function useCharacters() {
 	return useLordOfRingsApi<Character>("/character");
 }
+// Специализированный хук для фильмов
+export function useMovies() {
+	return useLordOfRingsApi<Movie>("/movie");
+}
+// Специализированный хук для цитат из фильма
+// export function useMovieQuotes(movieId: string) {
+// 	return useLordOfRingsApi<QuoteMovie>(`/movie/${movieId}/quote`);
+// }

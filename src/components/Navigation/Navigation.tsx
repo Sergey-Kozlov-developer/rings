@@ -48,6 +48,7 @@ function Navigation() {
 					>
 						Фильмы
 					</Link>
+
 					<Link
 						to="/about"
 						className={`py-4 px-2 border-b-2 transition-colors ${
